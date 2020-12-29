@@ -36,7 +36,7 @@ Plugin 'vim-airline/vim-airline'
 " Plugin 'enricobacis/vim-airline-clock'
 Plugin 'joshdick/onedark.vim'
 Plugin 'lilydjwg/colorizer'
-Plugin 'vim-syntastic/syntastic'
+" Plugin 'vim-syntastic/syntastic'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'grep.vim'
 Plugin 'mattn/emmet-vim'
@@ -50,7 +50,7 @@ filetype plugin indent on    " required
 
 map <C-n> :NERDTreeToggle<CR>
 map <C-g> :Goyo<CR>
-map <C-s> :SyntasticToggleMode<CR>
+" map <C-s> :SyntasticToggleMode<CR>
 
 " Splits
 map <C-j> <C-W>j
@@ -66,18 +66,18 @@ set splitbelow
 :noremap <F3> :set nu! nu?<CR>
 
 " Linter stuff
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
 set shell=/usr/local/bin/zsh
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_eslint_exe = 'npm run lint --'
-let g:user_emmet_leader_key=','
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+" let g:syntastic_javascript_checkers = ['eslint']
+" let g:syntastic_javascript_eslint_exe = 'npm run lint --'
+" let g:user_emmet_leader_key=','
 
 " Code folding
 set foldmethod=indent   
